@@ -42,6 +42,7 @@ void Init_BaseStream(VALUE mMediaInfoNative)
 
   for(unsigned int st = 0; st < STREAM_TYPE_MAX; ++st) {
     rb_define_method(stream_klasses[st], "lookup", (VALUE(*)(...)) bs_lookup, 1);
+    rb_undef_alloc_func(stream_klasses[st]);
   }
 }
 
