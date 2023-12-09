@@ -12,6 +12,7 @@ module MediaInfoNative
     mediainfo_attr_reader :overall_bit_rate, 'OverallBitRate'
     mediainfo_attr_reader :encoded_application_string, 'Encoded_Application/String'
     mediainfo_attr_reader :encoded_application, 'Encoded_Application'
+    mediainfo_attr_reader :is_streamable, 'IsStreamable'
     mediainfo_int_reader :headersize, 'HeaderSize'
     mediainfo_int_reader :datasize, 'DataSize'
     mediainfo_int_reader :footersize, 'FooterSize'
